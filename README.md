@@ -4,11 +4,11 @@ This reposiroty includes docker files and scripts to deploy a custom Hyperledger
 
 ## Network Configuration
 
-No of Orgs : 3  
-No of Peers : 1 Peer per Org  
-No of Orderers : 3  
-Consensus Mechanism : Raft Consensus Protocol  
-State Database : CouchDB  
+1. No of Orgs : 3  
+2. No of Peers : 1 Peer per Org  
+3. No of Orderers : 3  
+4. Consensus Mechanism : Raft Consensus Protocol  
+5. State Database : CouchDB  
 
 ## Steps to Deploy
 
