@@ -56,7 +56,7 @@ CHANNEL_NAME="mychannel"
 CC_RUNTIME_LANGUAGE="golang"
 VERSION="1"
 SEQUENCE="1"
-CC_SRC_PATH="./artifacts/src/github.com/pmcc"
+CC_SRC_PATH="../artifacts/src/github.com/pmcc"
 CC_NAME="pmcc"
 
 packageChaincode() {
