@@ -18,3 +18,9 @@ This reposiroty includes docker files and scripts to deploy a custom Hyperledger
 4. Deploy the peer and orderer nodes using the docker-compose file in artifacts folder
 5. Create a channel and join all the peers to this channel using createChannel.sh
 6. Deploy and Invoke chaincode scripts can be found in respective folders
+
+
+## Chaincodes
+
+1. Proposed Chaincode and Reference Chaincode can be gound in artifacts/src/github.com/ folder
+2. Deployment scripts can be used to deploy respective chaincodes
