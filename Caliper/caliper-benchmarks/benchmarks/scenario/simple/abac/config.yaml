@@ -1,0 +1,26 @@
+---
+test:
+  name: simple
+  description: This is an example benchmark for caliper, to test access control
+  workers:
+    type: local
+    number: 3
+  rounds:
+  - label: access
+    description: Test description for the resource access through the deployed chaincodes
+    txNumber: 900
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 100
+    arguments:
+      money: 1
+    callback: benchmarks/scenario/simple/abac/testAccess.js
+
+monitor:
+  type:
+    - docker
+  docker:
+    name:
+      - all
+  interval: 1

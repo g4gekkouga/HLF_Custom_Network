@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+  caliper_2.2:
+    container_name: caliper_latest
+    image: hyperledger/caliper:0.4.2
+    command: launch manager --caliper-fabric-gateway-enabled
+    environment:
+      - CALIPER_BIND_SUT=fabric:latest-v2
+      - CALIPER_BENCHCONFIG=benchmarks/scenario/simple/abac/config.yaml
+      - CALIPER_NETWORKCONFIG=networks/fabric/abac/network-config.yaml
+    volumes:
+      - ./caliper-benchmarks:/hyperledger/caliper/workspace
+    network_mode: host
